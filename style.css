@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    padding-bottom: 80px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.bg-gradient {
+    background-image: linear-gradient(135deg, #676AB8, #25254C);
+    width: 100%;
+    height: 400px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* header */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    width: 90%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.header img {
+    filter: invert(100%);
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    color: white;
+    font-weight: 600;
+}
+
+.center img {
+    filter: invert(0);
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.social-media {
+    display: flex;
+    gap: 15px;
+}
+
+.right .menu {
+    filter: invert(0%);
+}
+
+hr {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    margin: 15px 0 25px;
+}
+
+
+/* header */
+
+/* main */
+
+.title{
+    font-size: 48px;
+    font-weight: 800;
+    color: white;
+}
+
+.title-txt{
+    font-size: 26px;
+    max-width: 500px;
+    color: white;
+}
+
+.date{
+    font-size: 52px;
+    font-weight: 800;
+    color: white;
+    margin: 30px 0 ;
+}
+
+/* modal-windows */
+
+.modal-windows{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.modal{
+    width: 100%;
+    padding: 20px 80px 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    box-shadow: 0 5px 2px rgba(126, 126, 126, 0.5);
+    transition: .5;
+}
+
+.window-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hall-num{
+    font-size: 50px;
+    font-weight: 800;
+    color: #3A3B6E;
+}
+
+.open-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-image: linear-gradient(135deg, #676AB8, #25254C);
+    border-radius: 100%;    
+}
+
+.modal-txt{
+    padding-top: 40px;
+    opacity: 0;
+    height: 0;
+    transition: .5;
+    display: none;
+}
+
+.window-txt-parag{
+    font-size: 32px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding: 15px 0;
+}
+
+.window-txt-left{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.window-txt-right{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.movie-name{
+    font-size: 20px;
+}
+
+.active-modal{
+    height: fit-content;
+    opacity: 1;
+    display: block;
+}
+
+/* modal-windows */
+
+/* main */
